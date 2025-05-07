@@ -85,7 +85,7 @@ def minimax_alpha_beta(board, depth, alpha, beta, maximizing_player):
                     max_eval = max(max_eval, eval)
                     alpha = max(alpha, eval)
                     # Tia nhanh
-                    if alpha >= beta:
+                    if alpha > beta:
                         break
         return max_eval
     # Toi thieu hoa so diem cho nguoi choi O
@@ -103,7 +103,7 @@ def minimax_alpha_beta(board, depth, alpha, beta, maximizing_player):
                     min_eval = min(min_eval, eval)
                     beta = min(beta, eval)
                     # Tia nhanh
-                    if alpha >= beta:
+                    if alpha > beta:
                         break
         return min_eval
 
